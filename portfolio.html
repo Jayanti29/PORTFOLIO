@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Jayanti Gautam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .skill-item:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="fixed w-full bg-white shadow-md z-10">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800">Jayanti Gautam</div>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="text-gray-600 hover:text-gray-900">About</a></li>
+                <li><a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-bg text-white pt-20 pb-16">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+                <p class="text-xl mb-8">Web Developer | IT Intern</p>
+                <a href="#contact" class="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Get In Touch</a>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9fbaafc1-b166-41bf-b4ad-cad89a76bf9a.png" alt="Confident smiling professional headshot of young female web developer Jayanti Gautam wearing glasses and a casual blue shirt, standing against a modern office background with subtle lighting and professional camera angle" class="w-full rounded-lg shadow-lg" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b4521516-3438-42c0-b8d9-cb8d61f3875b.png" alt="Cluttered but organized university study desk in a bright classroom at Presidency University Bangalore showing an open laptop displaying coding interface, stacked programming books, earbuds, coffee mug with university logo, and notepads with handwritten code snippets on a modern wooden desk" class="w-full rounded-lg shadow-md" />
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <p class="text-gray-700 mb-4">
+                        I am Jayanti Gautam, currently pursuing BCA in Data Science from Presidency University, Bangalore. 
+                        I have completed a 9-month internship at Digishuja as an IT Intern, where I gained hands-on experience in technology and software development.
+                        I have participated in hackathons, including creating "Mind Mates," an AI-powered mental health web application.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        I am passionate about creating meaningful web applications that solve real-world problems. When I'm not studying or working, I enjoy exploring new web technologies, building personal projects, or participating in development communities.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Pursuing BCA in Data Science at Presidency University, Bangalore</li>
+                        <li>9-month IT Internship at Digishuja</li>
+                        <li>Experience in web development and application building</li>
+                        <li>Hackathon participant - created Mind Mates mental health app</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="skill-item bg-white p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ceaa4d0f-82ce-4325-b579-ca850d014c01.png" alt="Colorful globe icon with HTML brackets, CSS paintbrush, and JavaScript code snippets arranged in a circular pattern representing modern web development technologies" class="mx-auto mb-2" style="width: 64px; height: 64px;" />
+                    <h3 class="text-xl font-semibold">Web Development</h3>
+                    <p class="text-gray-600">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-item bg-white p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62cef6df-72cc-4190-951d-741c7eae304a.png" alt="Blue gear mechanism with Node.js logo, Express.js routing icons, and SQL database connection symbols representing backend development infrastructure" class="mx-auto mb-2" style="width: 64px; height: 64px;" />
+                    <h3 class="text-xl font-semibold">Backend Development</h3>
+                    <p class="text-gray-600">Node.js, Express, SQL</p>
+                </div>
+                <div class="skill-item bg-white p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7bafe612-cee8-44ec-8f40-0292a397be02.png" alt="React atomic symbol with Component building blocks, Tailwind CSS utility icons, and responsive design arrows in a modern tech stack arrangement" class="mx-auto mb-2" style="width: 64px; height: 64px;" />
+                    <h3 class="text-xl font-semibold">Frontend Frameworks</h3>
+                    <p class="text-gray-600">React.js, Tailwind CSS</p>
+                </div>
+                <div class="skill-item bg-white p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d2c324d-da4f-4518-a74c-8f6ec3ad0704.png" alt="Cloud infrastructure icon showing network cables, server racks, and system administration console windows representing IT support and networking technologies" class="mx-auto mb-2" style="width: 64px; height: 64px;" />
+                    <h3 class="text-xl font-semibold">IT Support</h3>
+                    <p class="text-gray-600">System Administration, Networking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e04624c4-1700-45be-b6c8-d2ba3c3dad4a.png" alt="Clean and modern mental health web application interface for Mind Mates showing empathetic chat bot messages, mood tracking calendar with colorful emoji indicators, helpful resource cards for stress relief techniques, and accessible navigation menu with comforting pastel blue and green color scheme" class="w-full rounded-lg mb-4" />
+                    <h3 class="text-xl font-semibold mb-2">Mind Mates - Mental Health AI</h3>
+                    <p class="text-gray-700 mb-4">An AI-powered mental health web application created for a hackathon. Features include chat support, mood tracking, resource recommendations, and a user-friendly interface built with HTML, CSS, and JavaScript. Designed to provide accessible mental wellness support with an intuitive, supportive user experience.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                </div>
+                <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dc46a331-9bf4-48e2-8d02-55333c22a759.png" alt="Professional data dashboard screenshot displaying interactive bar charts and line graphs for business analytics, featuring dark theme interface with toggle switches for filtering data views, responsive grid layout, and sleek modern design with blue accent colors" class="w-full rounded-lg mb-4" />
+                    <h3 class="text-xl font-semibold mb-2">Interactive Web Dashboard</h3>
+                    <p class="text-gray-700 mb-4">A responsive web dashboard for data visualization and analysis built with HTML, CSS, JavaScript, and Chart.js libraries, featuring dynamic charts and user-friendly interfaces. Includes real-time data updates, filtering controls, and mobile-responsive layouts for comprehensive data insights.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Get In Touch</h2>
+            <div class="max-w-lg mx-auto">
+                <form id="contactForm" class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2023 Jayanti Gautam. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+                <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            // Here you could add actual form submission logic
+        });
+
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            document.querySelector('header').style.backgroundColor = scrollPosition > 0 ? 'rgba(255, 255, 255, 0.9)' : '#ffffff';
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
