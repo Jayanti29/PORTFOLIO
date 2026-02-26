@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jayanti Gautam | Portfolio</title>
+    <meta name="description" content="Jayanti Gautam portfolio - projects, skills, education, resume, and contact." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+<link rel="stylesheet" href="./styles.css" />
+
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="header">
+      <a href="#home" class="logo">JG//PORTFOLIO</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#internships">Internships</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home" class="container">
+      <section class="hero panel reveal">
+        <p class="eyebrow">Software Engineer • Builder • Problem Solver</p>
+        <h1>
+          I build <span>modern digital products</span>
+          with clean engineering and futuristic UX.
+        </h1>
+        <p class="lead" id="aboutShort"></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore Projects</a>
+          <a class="btn ghost" href="#resume">View Resume</a>
+        </div>
+        <div class="profile-links">
+          <a id="githubLink" target="_blank" rel="noreferrer">GitHub</a>
+          <a id="linkedinLink" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a id="resumeTopLink" target="_blank" rel="noreferrer">Resume PDF</a>
+        </div>
+      </section>
+
+      <section id="about" class="panel reveal">
+        <h2>About Me</h2>
+        <p id="aboutText"></p>
+      </section>
+
+      <section id="projects" class="panel reveal">
+        <div class="section-head">
+          <h2>GitHub Projects</h2>
+          <p>Fetched automatically from <code>github.com/Jayanti29</code></p>
+        </div>
+        <div id="projectsGrid" class="projects"></div>
+      </section>
+      <section id="internships" class="panel reveal">
+  <h2>Internships & Experience</h2>
+  <div id="internshipsGrid" class="projects"></div>
+</section>
+<section id="education" class="panel reveal">
+        <h2>Education</h2>
+        <div id="educationList" class="timeline"></div>
+      </section>
+
+      <section id="skills" class="panel reveal">
+        <h2>Skills</h2>
+        <div id="skillsGrid" class="skills"></div>
+         <p id="languageList"></p>
+      </section>
+
+     <section id="resume" class="panel reveal">
+  <h2>Resume</h2>
+  <div class="resume-frame">
+    <iframe id="resumeFrame" title="Jayanti Gautam Resume" src="./JAYANTI_GAUTAM.pdf"></iframe>
+  </div>
+  <div class="resume-actions">
+    <a class="btn ghost" href="./JAYANTI_GAUTAM.pdf" target="_blank" rel="noreferrer">Open Main Resume</a>
+    <a class="btn ghost" href="./jayanti_beerbiceps.pdf" target="_blank" rel="noreferrer">Open Alt Resume</a>
+  </div>
+</section>
+
+      <section id="contact" class="panel reveal">
+        <h2>Contact</h2>
+        <p>Email: <a id="emailLink"></a></p>
+        <p>Open to internships, full-time roles, and product collaborations.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small id="footerText"></small>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
